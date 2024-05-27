@@ -7,7 +7,6 @@ const loadApp = () => {
   initWelcomePage();
 };
 
-
 let currentQuestionIndex = quizData.currentQuestionIndex;
 
 const questionContainer = document.getElementById('question-container');
@@ -41,7 +40,7 @@ function setNextQuestion() {
 
 function showQuestion(question) {
   questionElement.innerText = question.text;
-  Object.keys(question.answers).forEach(key => {
+  Object.keys(question.answers).forEach((key) => {
     const button = document.createElement('button');
     button.innerText = question.answers[key];
     button.classList.add('btn');
@@ -91,4 +90,4 @@ continueButton.addEventListener('click', () => {
 });
 
 restartButton.addEventListener('click', startQuiz);
-s
+s;

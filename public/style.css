@@ -67,14 +67,15 @@ p {
   cursor: pointer;
   transition: background-color 0.3s;
   flex: 1; /* Each button takes equal space */
-  max-width: calc(50% - 10px); /* Maximum width of each button (50% of container width with margin) */
+  max-width: calc(
+    50% - 10px
+  ); /* Maximum width of each button (50% of container width with margin) */
   box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
 .answer-buttons button:hover {
   background-color: #666666; /* Darker gray on hover */
 }
-
 
 .next-button,
 .continue-button,
