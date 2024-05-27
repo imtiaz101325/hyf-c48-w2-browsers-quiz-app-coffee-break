@@ -53,23 +53,28 @@ p {
 
 .answer-buttons {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap; /* Allow wrapping of answer buttons */
+  justify-content: center; /* Center the answer buttons horizontally */
 }
 
 .answer-buttons button {
-  background-color: #007bff;
+  background-color: #808080; /* Gray background color */
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px;
-  margin: 5px 0;
+  margin: 5px; /* Add margin between answer buttons */
   cursor: pointer;
   transition: background-color 0.3s;
+  flex: 1; /* Each button takes equal space */
+  max-width: calc(50% - 10px); /* Maximum width of each button (50% of container width with margin) */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
 .answer-buttons button:hover {
-  background-color: #0056b3;
+  background-color: #666666; /* Darker gray on hover */
 }
+
 
 .next-button,
 .continue-button,
