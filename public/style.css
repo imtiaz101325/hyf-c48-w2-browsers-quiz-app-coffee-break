@@ -131,7 +131,6 @@ ul {
 
 }
 .quizarea .questions{
-  margin: 0 10px;
   border-top: 1px solid #9e0059;
   text-align: start;
   letter-spacing: inherit;
@@ -141,10 +140,32 @@ ul {
 }
 
 
-.quizarea  .answers{}
+.quizarea  .answers{
+      text-align: start;
+    border: 1px solid;
+    margin-bottom: 13px;
+    padding: 12px;
+    font-size: 20px;
+}
 .answers input{}
 .answers label{}
 
-.quizarea .end{}
+.quizarea .end{
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+}
 .quizarea .end h2{}
-.quizarea .end button{}
+.quizarea .end h2 span:first-child{}
+
+.quizarea .end button{
+  width: 50px;
+  height: 43px;
+  font-size: 17px;
+  background:#2b001bf7;
+  color: pink;
+  border: 1px solid pink;
+  
+  border-radius: 10px;
+
+}
