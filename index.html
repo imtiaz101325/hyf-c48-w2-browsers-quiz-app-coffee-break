@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Break Quiz</title>
+    <link rel="stylesheet" href="./public/style.css" />
     <link rel="icon" href="./public/favicon.png" type="image/png" />
-    <link href="./public/style.css" rel="stylesheet" />
   </head>
-
   <body>
-    <!-- Put your HTML here -->
-    <div id="user-interface" class="centered"></div>
-    <ul></ul>
-    <!-- your data -->
-    <script type="module" src="src/app.js"></script>
+    <div id="app-container" class="centered">
+      <div id="quiz-container">
+        <header>
+          <h1>Coffee Break Quiz</h1>
+        </header>
+        <div id="content">
+          <p>
+            Test your knowledge with our fun and engaging quiz. Answer the
+            questions and see how well you score!
+          </p>
+          <div id="question-container" class="question-container">
+            <div id="question" class="question">Question will appear here</div>
+            <div id="answer-buttons" class="answer-buttons">
+              <!-- Answer buttons will be dynamically added here -->
+            </div>
+          </div>
+          <div id="score-container" class="score-container">
+            <div id="score" class="score">Score: <span>0</span></div>
+            <button id="continue-button" class="continue-button">
+              Continue
+            </button>
+          </div>
+          <div id="result-container" class="result-container hidden">
+            <h2 id="result">Your result will appear here</h2>
+            <button id="restart-button" class="restart-button">Restart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js" type="module"></script>
   </body>
 </html>
