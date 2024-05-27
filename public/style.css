@@ -111,9 +111,10 @@ ul {
   transform: translate(-50%, -50%);
   text-align: center;
     border: 2px solid #9e0059;
-    width: 400px;
+    width: 350px;
     height: 500px;
     color: white;
+    padding: 0 20px;
 }
 .quizarea .title{
   margin: 20px;
@@ -129,11 +130,21 @@ ul {
   padding: 10px;
 
 }
-.quizarea .quetions{
+.quizarea .questions{
   margin: 0 10px;
   border-top: 1px solid #9e0059;
+  text-align: start;
+  letter-spacing: inherit;
+  font-size: 25px;
+  text-transform: capitalize;
+ 
 }
-.quizarea .answers{
-  margin: 0 10px;
-  border-bottom:  1px solid #9e0059;
-}
+
+
+.quizarea  .answers{}
+.answers input{}
+.answers label{}
+
+.quizarea .end{}
+.quizarea .end h2{}
+.quizarea .end button{}
