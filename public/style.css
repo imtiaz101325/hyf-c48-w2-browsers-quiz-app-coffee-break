@@ -1,171 +1,138 @@
-
 body{
  
- background-color: #FF3CAC;
-   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-   background-size:cover;
-  
-}
-
-.container{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.logo{
-  font-family: "Indie Flower", cursive;
-  font-style: italic;
-  color: #fff;
-  font-weight: bold;
-  font-size: 24px;
-  border-bottom: 2px solid;
-  width: fit-content;
-  
-  
-}
-.container h4{
-  color: #fff;
-  font-size: 62px;
-  font-weight: bold;
-
-}
-.container button{
-  padding: 15px 42px;
-  background: none;
-  color: #fff;
-  border: 3px solid white;
-  border-radius: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  transition:ease-out .3s
-
-
-}
-.container button:hover{
-  background-color: #784BA0;
-transform: scale(1.1);
-font-size: 30px;
-border-color: #784BA0;
-}
-
-.scrollable {
-  height: auto;
-  max-height: 80vh;
-  overflow: auto;
-}
-
-ul {
-  list-style: none;
-}
-.guide{
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  background: #fff;
-  width:max-content;
-  height: 300px;
-  border-radius: 16px;
-}
-.guide h1{
-  color:#d21e96;
-}
-.guide ul{
-  list-style: auto;
-  text-align: start;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-bottom: 4px solid #eee;
-}
-.guide ul li{
-  padding: 13px 36px 17px 1px;
-  font-size: 16px;
-  font-family: cursive;
-  width: fit-content;
-}
-
-.guide .buttons{
-  display: flex;
-    justify-content: space-around;
-}
-.buttons button{
-  background-color: #d21e96;
-  color: #fff;
-  border: none;
-  padding: 8px;
-  border-radius: 7px;
-  font-weight: bold;
-  cursor: pointer;
-}
-.quizarea{
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-    border: 2px solid #9e0059;
-    width: 350px;
-    height: 500px;
-    color: white;
-    padding: 0 20px;
-}
-.quizarea .title{
-  margin: 20px;
-    font-size: 24px;
-    font-weight: bolder;
-    background: #9e0059;
-}
-.quizarea .score{
-  background: #9e0059;
-  margin: 20px auto;
-  width: fit-content;
-  text-transform: uppercase;
-  padding: 10px;
-
-}
-.quizarea .questions{
-  border-top: 1px solid #9e0059;
-  text-align: start;
-  letter-spacing: inherit;
-  font-size: 25px;
-  text-transform: capitalize;
+  background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    background-size:cover;
+   
+ }
  
-}
-
-
-.quizarea  .answers{
-      text-align: start;
-    border: 1px solid;
-    margin-bottom: 13px;
-    padding: 12px;
-    font-size: 20px;
-}
-.answers input{}
-.answers label{}
-
-.quizarea .end{
-  display: flex;
-  justify-content: space-between;
-align-items: center;
-}
-.quizarea .end h2{}
-.quizarea .end h2 span:first-child{}
-
-.quizarea .end button{
-  width: 50px;
-  height: 43px;
-  font-size: 17px;
-  background:#2b001bf7;
-  color: pink;
-  border: 1px solid pink;
-  
-  border-radius: 10px;
-
-}
+ .container{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+ }
+ .logo{
+   font-family: "Indie Flower", cursive;
+   font-style: italic;
+   color: #fff;
+   font-weight: bold;
+   font-size: 24px;
+   border-bottom: 2px solid;
+   width: fit-content;
+   
+   
+ }
+ .container h4{
+   color: #fff;
+   font-size: 62px;
+   font-weight: bold;
+ 
+ }
+ .container button{
+   padding: 15px 42px;
+   background: none;
+   color: #fff;
+   border: 3px solid white;
+   border-radius: 10px;
+   font-size: 25px;
+   font-weight: bold;
+   cursor: pointer;
+   outline: none;
+   transition:ease-out .3s
+ 
+ 
+ }
+ .container button:hover{
+   background-color: #784BA0;
+ transform: scale(1.1);
+ font-size: 30px;
+ border-color: #784BA0;
+ }
+ 
+ .scrollable {
+   height: auto;
+   max-height: 80vh;
+   overflow: auto;
+ }
+ 
+ ul {
+   list-style: none;
+ }
+ .guide{
+   display: none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   background: #fff;
+   width:max-content;
+   height: 300px;
+   border-radius: 16px;
+ }
+ .guide h1{
+   color:#d21e96;
+ }
+ .guide ul{
+   list-style: auto;
+   text-align: start;
+   margin-left: 10px;
+   margin-right: 10px;
+   border-bottom: 4px solid #eee;
+ }
+ .guide ul li{
+   padding: 13px 36px 17px 1px;
+   font-size: 16px;
+   font-family: cursive;
+   width: fit-content;
+ }
+ 
+ .guide .buttons{
+   display: flex;
+     justify-content: space-around;
+ }
+ .buttons button{
+   background-color: #d21e96;
+   color: #fff;
+   border: none;
+   padding: 8px;
+   border-radius: 7px;
+   font-weight: bold;
+   cursor: pointer;
+ }
+ .quizarea{
+   display: none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+     border: 2px solid #9e0059;
+     width: 400px;
+     height: 500px;
+     color: white;
+ }
+ .quizarea .title{
+   margin: 20px;
+     font-size: 24px;
+     font-weight: bolder;
+     background: #9e0059;
+ }
+ .quizarea .score{
+   background: #9e0059;
+   margin: 20px auto;
+   width: fit-content;
+   text-transform: uppercase;
+   padding: 10px;
+ 
+ }
+ .quizarea .quetions{
+   margin: 0 10px;
+   border-top: 1px solid #9e0059;
+ }
+ .quizarea .answers{
+   margin: 0 10px;
+   border-bottom:  1px solid #9e0059;
+ }
