@@ -1,3 +1,4 @@
+
 import {
   ANSWERS_LIST_ID,
   NEXT_QUESTION_BUTTON_ID,
@@ -6,6 +7,7 @@ import {
 import { createQuestionElement } from '../views/questionView.js';
 import { createAnswerElement } from '../views/answerView.js';
 import { quizData } from '../data.js';
+
 
 export const initQuestionPage = () => {
   const userInterface = document.getElementById(USER_INTERFACE_ID);
@@ -30,7 +32,6 @@ export const initQuestionPage = () => {
 };
 
 const nextQuestion = () => {
-  quizData.currentQuestionIndex = quizData.currentQuestionIndex + 1;
-
-  initQuestionPage();
+  quizData.currentQuestionIndex = (quizData.currentQuestionIndex + 1) % quizData.questions.length;
+  initQuestionPage(); // Re-initialize the question page with the next question
 };
