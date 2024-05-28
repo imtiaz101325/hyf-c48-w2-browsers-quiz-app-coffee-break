@@ -42,7 +42,7 @@ const handleAnswerClick = (selectedKey, correctKey) => {
     answer.style.pointerEvents = 'none';
   });
 };
-
+ 
 const showResultAndNextQuestion = () => {
   const userInterface = document.getElementById(USER_INTERFACE_ID);
   const answersListElement = document.getElementById(ANSWERS_LIST_ID);
