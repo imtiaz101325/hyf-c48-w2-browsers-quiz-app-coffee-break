@@ -1,5 +1,5 @@
 {
-  "name": "coffee-break-quiz-app",
+  "name": "js-quiz-starter",
   "version": "1.0.0",
   "scripts": {
     "prettier:write": "prettier --write .",
