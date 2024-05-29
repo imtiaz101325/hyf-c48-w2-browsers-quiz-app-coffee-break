@@ -6,8 +6,10 @@ import {
   CONTAINER_START,
 } from '../constants.js';
 import { createQuestionElement } from '../views/questionView.js';
-import { createAnswerElement } from '../views/answerView.js';
+import { createAnswerElement,handleAnswerClick } from '../views/answerView.js';
 import { quizData } from '../data.js';
+
+let score = 0;
 
 export const initQuestionPage = () => {
   const userInterface = document.getElementById(QUIZ_AREA);
@@ -15,7 +17,6 @@ export const initQuestionPage = () => {
   userInterface.innerHTML = '';
 
   const currentQuestion = quizData.questions[quizData.currentQuestionIndex];
-
   const questionElement = createQuestionElement(currentQuestion.text);
   userInterface.appendChild(questionElement);
 
@@ -23,13 +24,19 @@ export const initQuestionPage = () => {
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
     const answerElement = createAnswerElement(key, answerText);
+    answerElement.addEventListener('click', () =>
+      handleAnswerClick(key, currentQuestion.correct)
+    );
     answersListElement.appendChild(answerElement);
   }
 
   document
     .getElementById(NEXT_QUESTION_BUTTON_ID)
     .addEventListener('click', nextQuestion);
+   
+
 };
+
 
 export const nextQuestion = () => {
   quizData.currentQuestionIndex += 1;
