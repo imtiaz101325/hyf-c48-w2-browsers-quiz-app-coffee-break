@@ -1,20 +1,18 @@
-import {
-  ANSWERS_LIST_ID,
-  NEXT_QUESTION_BUTTON_ID,
-  USER_INTERFACE_ID,
-} from '../constants.js';
+
+import { ANSWERS_LIST_ID, NEXT_QUESTION_BUTTON_ID, QUIZ_AREA } from '../constants.js';
 import { createQuestionElement } from '../views/questionView.js';
 import { createAnswerElement } from '../views/answerView.js';
 import { quizData } from '../data.js';
 
 export const initQuestionPage = () => {
-  const userInterface = document.getElementById(USER_INTERFACE_ID);
+  const userInterface = document.getElementById(QUIZ_AREA);
+
+
   userInterface.innerHTML = '';
 
   const currentQuestion = quizData.questions[quizData.currentQuestionIndex];
 
   const questionElement = createQuestionElement(currentQuestion.text);
-
   userInterface.appendChild(questionElement);
 
   const answersListElement = document.getElementById(ANSWERS_LIST_ID);
@@ -29,8 +27,40 @@ export const initQuestionPage = () => {
     .addEventListener('click', nextQuestion);
 };
 
-const nextQuestion = () => {
-  quizData.currentQuestionIndex = quizData.currentQuestionIndex + 1;
+export const nextQuestion = () => {
+  quizData.currentQuestionIndex += 1;
 
-  initQuestionPage();
+  if (quizData.currentQuestionIndex < quizData.questions.length) {
+    initQuestionPage();
+  } else {
+   
+    showQuizResults();
+  }
 };
+
+const showQuizResults = () => {
+  const userInterface = document.getElementById(QUIZ_AREA);
+  userInterface.innerHTML = `
+    <div class="container">
+      <h1>Quiz Results</h1>
+      <h4>Your score: ${quizData.score} out of ${quizData.questions.length}</h4>
+      <div class="buttons">
+        <button id="try-again-button">Try Again</button>
+        <button id="go-home-button">Go to Home</button>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('try-again-button').addEventListener('click', () => {
+    quizData.currentQuestionIndex = 0;
+    quizData.score = 0;
+    initQuestionPage();
+  });
+
+  document.getElementById('go-home-button').addEventListener('click', () => {
+    
+  });
+};
+
+document.getElementById('start-quiz-button').addEventListener('click', initQuestionPage);
+document.getElementById('start').addEventListener('click', initQuestionPage);

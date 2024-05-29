@@ -22,39 +22,46 @@ export const quizData = {
       },
       correct: 'c',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/variables',
-        },
-        {
-          text: 'Tyler McGinnis',
-          href: 'https://ui.dev/var-let-const/',
-        },
-      ],
     },
     {
-      text: 'What does `typeof` do?',
+      text: 'What are the differendriable?',
       answers: {
-        a: 'changes the type of a primitive value',
-        b: 'returns a string describing the type of a value',
-        c: 'determines if a value is primitive',
-        d: 'can tell the difference between arrays and objects',
+        a: 'cons',
+        b: 'var, const, let, function',
+        c: 'var, let, const',
       },
-      correct: 'b',
+      correct: 'a',
       selected: null,
-      links: [
-        {
-          text: 'javascript.info',
-          href: 'https://javascript.info/types#type-typeof',
-        },
-        {
-          text: 'MDN',
-          href:
-            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof',
-        },
-      ],
     },
+    {
+      text: 'Who declared?',
+      answers: {
+        a: 'constant, let, variable',
+        b: 'var, const, let, function',
+        c: 'var, let, const',
+      },
+      correct: 'c',
+      selected: null,
+    },
+    {
+      text: 'What d variable?',
+      answers: {
+        a: 'constant, let, variable',
+        b: 'var, const, let, function',
+        c: 'var, let, const',
+      },
+      correct: 'c',
+      selected: null,
+    }, {
+      text: 'sd ways to declare a JS variable?',
+      answers: {
+        a: 'constant, let, variable',
+        b: 'var, const, let, function',
+        c: 'var, let, const',
+      },
+      correct: 'c',
+      selected: null,
+    }
     // Add more questions here
   ],
 };
