@@ -10,11 +10,8 @@ body {
   align-items: center;
   height: 100vh;
   font-family: Arial, sans-serif;
-
 }
-#user-interface{
- 
-  
+#user-interface {
 }
 
 .centered {
@@ -47,14 +44,13 @@ button:hover {
 }
 
 /* Container for the quiz */
-#containerstart{
+#containerstart {
   background-color: rgb(255 255 255 / 62%);
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 7.1);
   padding: 20px;
   max-width: 500px;
   width: 90%;
-
 }
 
 /* List of answers */
@@ -94,35 +90,33 @@ ul#answers-list li:hover {
   display: none;
 }
 
-#guid{
+#guid {
   background-color: rgb(255 255 255 / 62%);
   border-radius: 60px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 7.1);
   padding: 20px;
   max-width: 500px;
   width: 90%;
-
 }
-#guid h3{
+#guid h3 {
   text-transform: capitalize;
-    font-family: fangsong;
-    font-size: 30px;
-    color: #bc6c25;
+  font-family: fangsong;
+  font-size: 30px;
+  color: #bc6c25;
 }
-#guid ul{
+#guid ul {
   list-style: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    font-size: 17px;
-    font-weight: bold;
-    color: #99582a;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-size: 17px;
+  font-weight: bold;
+  color: #99582a;
 }
-.button button{
-  background-color: #bc6c25;;
+.button button {
+  background-color: #bc6c25;
 }
-#quiz{
- 
+#quiz {
   width: 450px;
   height: 550px;
   background: wheat;

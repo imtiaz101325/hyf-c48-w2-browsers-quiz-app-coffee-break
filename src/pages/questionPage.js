@@ -1,12 +1,16 @@
-
-import { ANSWERS_LIST_ID, NEXT_QUESTION_BUTTON_ID, QUIZ_AREA,GO_TO_HOME,CONTAINER_START } from '../constants.js';
+import {
+  ANSWERS_LIST_ID,
+  NEXT_QUESTION_BUTTON_ID,
+  QUIZ_AREA,
+  GO_TO_HOME,
+  CONTAINER_START,
+} from '../constants.js';
 import { createQuestionElement } from '../views/questionView.js';
 import { createAnswerElement } from '../views/answerView.js';
 import { quizData } from '../data.js';
 
 export const initQuestionPage = () => {
   const userInterface = document.getElementById(QUIZ_AREA);
-
 
   userInterface.innerHTML = '';
 
@@ -33,11 +37,10 @@ export const nextQuestion = () => {
   if (quizData.currentQuestionIndex < quizData.questions.length) {
     initQuestionPage();
   } else {
-   
     showQuizResults();
   }
 };
-const mainpage=document.getElementById(CONTAINER_START)
+const mainpage = document.getElementById(CONTAINER_START);
 const showQuizResults = () => {
   const userInterface = document.getElementById(QUIZ_AREA);
   userInterface.innerHTML = `
@@ -58,12 +61,12 @@ const showQuizResults = () => {
   });
 
   document.getElementById('go-home-button').addEventListener('click', () => {
-    userInterface.style.display='none'
-    mainpage.style.display='block'
-    
+    userInterface.style.display = 'none';
+    mainpage.style.display = 'block';
   });
 };
 
-
-document.getElementById('start-quiz-button').addEventListener('click', initQuestionPage);
+document
+  .getElementById('start-quiz-button')
+  .addEventListener('click', initQuestionPage);
 document.getElementById('start').addEventListener('click', initQuestionPage);

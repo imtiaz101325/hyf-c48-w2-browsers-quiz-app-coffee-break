@@ -11,7 +11,7 @@
 
 export const quizData = {
   currentQuestionIndex: 0,
-  score:0,
+  score: 0,
   questions: [
     {
       text: 'What is the main ingredient in coffee?',

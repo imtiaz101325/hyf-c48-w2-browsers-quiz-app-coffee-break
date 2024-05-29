@@ -1,6 +1,5 @@
-
-import { quizData } from '../data.js'
-import { nextQuestion } from '../pages/questionPage.js'
+import { quizData } from '../data.js';
+import { nextQuestion } from '../pages/questionPage.js';
 
 export const createAnswerElement = (key, answerText) => {
   const element = document.createElement('li');
