@@ -15,3 +15,4 @@ export const EXIT_BUTTON='exit';
 export const START_BUTTON='start'
 export const QUIZ_AREA='quiz'
 export const NEXT_QUETION='next'
+export const GO_TO_HOME='go-home-button'

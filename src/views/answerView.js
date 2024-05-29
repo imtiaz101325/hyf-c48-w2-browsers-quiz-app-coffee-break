@@ -8,7 +8,7 @@ export const createAnswerElement = (key, answerText) => {
   element.addEventListener('click', () => handleAnswerClick(key));
   return element;
 };
-const handleAnswerClick = (selectedKey) => {
+export const handleAnswerClick = (selectedKey) => {
   const currentQuestion = quizData.questions[quizData.currentQuestionIndex];
   const correctAnswer = currentQuestion.correct;
 

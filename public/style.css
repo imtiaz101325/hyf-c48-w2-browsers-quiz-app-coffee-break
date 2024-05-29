@@ -1,13 +1,20 @@
 /* General styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background: url('/coffee.jpg') no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: Arial, sans-serif;
+
+}
+#user-interface{
+ 
+  
 }
 
 .centered {
@@ -18,8 +25,10 @@ body {
   text-align: center;
 }
 
-h3 {
-  margin: 20px 0;
+#containerstart h3 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: cursive;
 }
 
 button {
@@ -38,12 +47,14 @@ button:hover {
 }
 
 /* Container for the quiz */
-#quiz .container {
-  background-color: white;
-  padding: 20px;
+#containerstart{
+  background-color: rgb(255 255 255 / 62%);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 7.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+
 }
 
 /* List of answers */
@@ -81,4 +92,39 @@ ul#answers-list li:hover {
 #endingpag,
 #guid {
   display: none;
+}
+
+#guid{
+  background-color: rgb(255 255 255 / 62%);
+  border-radius: 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 7.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+
+}
+#guid h3{
+  text-transform: capitalize;
+    font-family: fangsong;
+    font-size: 30px;
+    color: #bc6c25;
+}
+#guid ul{
+  list-style: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 17px;
+    font-weight: bold;
+    color: #99582a;
+}
+.button button{
+  background-color: #bc6c25;;
+}
+#quiz{
+ 
+  width: 450px;
+  height: 550px;
+  background: wheat;
+  border-radius: 21px;
 }

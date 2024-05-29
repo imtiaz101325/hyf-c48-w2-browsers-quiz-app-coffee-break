@@ -11,57 +11,154 @@
 
 export const quizData = {
   currentQuestionIndex: 0,
-  // the questions in the quiz
+  score:0,
   questions: [
     {
-      text: 'What are the different ways to declare a JS variable?',
+      text: 'What is the main ingredient in coffee?',
       answers: {
-        a: 'constant, let, variable',
-        b: 'var, const, let, function',
-        c: 'var, let, const',
+        a: 'Tea leaves',
+        b: 'Coffee beans',
+        c: 'Cocoa beans',
+        d: 'Chicory root',
       },
-      correct: 'c',
+      correct: 'b',
       selected: null,
+      links: [
+        {
+          text: 'Wikipedia',
+          href: 'https://en.wikipedia.org/wiki/Coffee_bean',
+        },
+        {
+          text: 'National Coffee Association',
+          href: 'https://www.ncausa.org/About-Coffee/What-is-Coffee',
+        },
+      ],
     },
     {
-      text: 'What are the differendriable?',
+      text: 'What is the most popular coffee drink in the United States?',
       answers: {
-        a: 'cons',
-        b: 'var, const, let, function',
-        c: 'var, let, const',
+        a: 'Espresso',
+        b: 'Latte',
+        c: 'Cappuccino',
+        d: 'Drip coffee',
+      },
+      correct: 'd',
+      selected: null,
+      links: [
+        {
+          text: 'Statista',
+          href: 'https://www.statista.com/statistics/277137/us-most-popular-coffee-preparations/',
+        },
+        {
+          text: 'Coffee Affection',
+          href: 'https://coffeeaffection.com/most-popular-coffee-drinks/',
+        },
+      ],
+    },
+    {
+      text: 'Which country is the largest producer of coffee in the world?',
+      answers: {
+        a: 'Colombia',
+        b: 'Vietnam',
+        c: 'Ethiopia',
+        d: 'Brazil',
+      },
+      correct: 'd',
+      selected: null,
+      links: [
+        {
+          text: 'World Atlas',
+          href: 'https://www.worldatlas.com/articles/top-coffee-producing-countries.html',
+        },
+        {
+          text: 'Coffee Rank',
+          href: 'https://www.coffeerank.com/coffee-producers/',
+        },
+      ],
+    },
+    {
+      text: 'What is a coffee break?',
+      answers: {
+        a: 'A short rest period during the workday',
+        b: 'A time to brew coffee',
+        c: 'A moment to read about coffee',
+        d: 'A vacation dedicated to coffee tasting',
       },
       correct: 'a',
       selected: null,
+      links: [
+        {
+          text: 'Wikipedia',
+          href: 'https://en.wikipedia.org/wiki/Coffee_break',
+        },
+        {
+          text: 'HRZone',
+          href: 'https://www.hrzone.com/hr-glossary/what-is-a-coffee-break',
+        },
+      ],
     },
     {
-      text: 'Who declared?',
+      text: 'What is a cappuccino?',
       answers: {
-        a: 'constant, let, variable',
-        b: 'var, const, let, function',
-        c: 'var, let, const',
+        a: 'Espresso with steamed milk',
+        b: 'Espresso with steamed milk and foam',
+        c: 'Espresso with chocolate',
+        d: 'Black coffee with sugar',
       },
-      correct: 'c',
+      correct: 'b',
       selected: null,
+      links: [
+        {
+          text: 'Coffee Affection',
+          href: 'https://coffeeaffection.com/what-is-a-cappuccino/',
+        },
+        {
+          text: 'National Coffee Association',
+          href: 'https://www.ncausa.org/About-Coffee/What-is-Coffee/Coffee-Roasts-and-Flavors',
+        },
+      ],
     },
     {
-      text: 'What d variable?',
+      text: 'When is International Coffee Day celebrated?',
       answers: {
-        a: 'constant, let, variable',
-        b: 'var, const, let, function',
-        c: 'var, let, const',
+        a: 'September 29',
+        b: 'October 1',
+        c: 'August 15',
+        d: 'December 5',
+      },
+      correct: 'b',
+      selected: null,
+      links: [
+        {
+          text: 'International Coffee Organization',
+          href: 'https://www.internationalcoffeeday.org/',
+        },
+        {
+          text: 'National Today',
+          href: 'https://nationaltoday.com/international-coffee-day/',
+        },
+      ],
+    },
+    {
+      text: 'Which coffee brewing method involves pouring hot water over ground coffee in a filter?',
+      answers: {
+        a: 'French press',
+        b: 'Espresso machine',
+        c: 'Pour-over',
+        d: 'AeroPress',
       },
       correct: 'c',
       selected: null,
-    }, {
-      text: 'sd ways to declare a JS variable?',
-      answers: {
-        a: 'constant, let, variable',
-        b: 'var, const, let, function',
-        c: 'var, let, const',
-      },
-      correct: 'c',
-      selected: null,
-    }
-    // Add more questions here
+      links: [
+        {
+          text: 'Perfect Daily Grind',
+          href: 'https://perfectdailygrind.com/2019/09/whats-the-difference-between-pour-over-and-drip-coffee/',
+        },
+        {
+          text: 'Blue Bottle Coffee',
+          href: 'https://bluebottlecoffee.com/preparation-guides/pour-over',
+        },
+      ],
+    },
   ],
 };

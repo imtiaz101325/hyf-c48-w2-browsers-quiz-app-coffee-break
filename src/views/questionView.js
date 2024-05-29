@@ -1,11 +1,17 @@
+
 import { ANSWERS_LIST_ID } from '../constants.js';
 import { NEXT_QUESTION_BUTTON_ID } from '../constants.js';
+import { quizData } from '../data.js';
+import { handleAnswerClick } from './answerView.js';
+import { createAnswerElement } from './answerView.js';
+
 
 /**
  * Create a full question element
  * @returns {Element}
  */
-export const createQuestionElement = (question) => {
+const currentScore=quizData.score
+export const createQuestionElement = (question,currentScore) => {
   const element = document.createElement('div');
 
   // I use String.raw just to get fancy colors for the HTML in VS Code.
@@ -18,7 +24,12 @@ export const createQuestionElement = (question) => {
     <button id="${NEXT_QUESTION_BUTTON_ID}">
       Next question
     </button>
+    <h3>Score:${quizData.score} / ${quizData.questions.length}</h3>
   `;
 
   return element;
 };
+
+
+
+
