@@ -21,7 +21,9 @@ export const initQuestionPage = () => {
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
     const answerElement = createAnswerElement(key, answerText);
-    answerElement.addEventListener('click', () => handleAnswerClick(key, currentQuestion.correct));
+    answerElement.addEventListener('click', () =>
+      handleAnswerClick(key, currentQuestion.correct)
+    );
     answersListElement.appendChild(answerElement);
   }
 
@@ -32,17 +34,17 @@ export const initQuestionPage = () => {
 
 const handleAnswerClick = (selectedKey, correctKey) => {
   const answersListElement = document.getElementById(ANSWERS_LIST_ID);
-  answersListElement.dataset.selectedAnswer = selectedKey; 
+  answersListElement.dataset.selectedAnswer = selectedKey;
 
   if (selectedKey === correctKey) {
     score += 2;
   }
 
-  answersListElement.childNodes.forEach(answer => {
+  answersListElement.childNodes.forEach((answer) => {
     answer.style.pointerEvents = 'none';
   });
 };
- 
+
 const showResultAndNextQuestion = () => {
   const userInterface = document.getElementById(USER_INTERFACE_ID);
   const answersListElement = document.getElementById(ANSWERS_LIST_ID);
@@ -63,7 +65,6 @@ const showResultAndNextQuestion = () => {
   setTimeout(() => {
     userInterface.removeChild(feedbackElement);
 
-
     quizData.currentQuestionIndex += 1;
 
     if (quizData.currentQuestionIndex < quizData.questions.length) {
@@ -71,7 +72,7 @@ const showResultAndNextQuestion = () => {
     } else {
       userInterface.innerHTML = `<h1>Quiz Finished!</h1><p>Your score: ${score}</p>`;
     }
-  }, 2000); 
+  }, 2000);
 };
 
 initQuestionPage();
