@@ -6,7 +6,7 @@ import {
   CONTAINER_START,
 } from '../constants.js';
 import { createQuestionElement } from '../views/questionView.js';
-import { createAnswerElement,handleAnswerClick } from '../views/answerView.js';
+import { createAnswerElement, handleAnswerClick } from '../views/answerView.js';
 import { quizData } from '../data.js';
 
 let score = 0;
@@ -33,10 +33,7 @@ export const initQuestionPage = () => {
   document
     .getElementById(NEXT_QUESTION_BUTTON_ID)
     .addEventListener('click', nextQuestion);
-   
-
 };
-
 
 export const nextQuestion = () => {
   quizData.currentQuestionIndex += 1;
