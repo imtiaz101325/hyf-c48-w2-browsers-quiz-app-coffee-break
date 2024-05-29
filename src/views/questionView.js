@@ -14,7 +14,7 @@ const currentScore=quizData.score
 export const createQuestionElement = (question,currentScore) => {
   const element = document.createElement('div');
 
-  // I use String.raw just to get fancy colors for the HTML in VS Code.
+
   element.innerHTML = String.raw`
     <h1>${question}</h1>
 
