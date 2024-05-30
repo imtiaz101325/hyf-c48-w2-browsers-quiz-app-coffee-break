@@ -8,11 +8,12 @@ import {
   GUID_SECTION,
  
 } from '../constants.js';
+import { quizData } from '../data.js';
 import { createWelcomeElement } from '../views/welcomeView.js';
 import { initQuestionPage } from './questionPage.js';
 
 export const initWelcomePage = () => {
-  const userInterface = document.getElementById(USER_INTERFACE_ID);
+  // const userInterface = document.getElementById(USER_INTERFACE_ID);
   // userInterface.innerHTML = '';
 
   // const welcomeElement = createWelcomeElement();
@@ -24,6 +25,8 @@ export const initWelcomePage = () => {
 };
 
 const startQuiz = () => {
+  quizData.currentQuestionIndex = 0;
+  currentQuestionIndex =quizData.currentQuestionIndex;
   initQuestionPage();
 };
 const guid = document.getElementById(GUID_SECTION);
@@ -34,15 +37,20 @@ const quizarea = document.getElementById(QUIZ_AREA);
 
 const startbutton = document.getElementById(START_QUIZ_BUTTON_ID);
 startbutton.addEventListener('click', () => {
-  console.log('djc');
   guid.style.display = 'block';
   startcontainer.style.display = 'none';
+  initQuestionPage();
+  startQuiz();
 });
 startqu.addEventListener('click', () => {
   quizarea.style.display = 'block';
   guid.style.display = 'none';
+  startQuiz();
+  initQuestionPage();
 });
 exitguid.addEventListener('click', () => {
   startcontainer.style.display = 'block';
   guid.style.display = 'none';
+  initQuestionPage();
+  startQuiz();
 });
