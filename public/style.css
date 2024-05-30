@@ -1,17 +1,124 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background: url('/coffee.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+#user-interface {
+}
+
 .centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.scrollable {
-  height: auto;
-  max-height: 80vh;
-  overflow: auto;
+#containerstart h3 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: cursive;
 }
 
-ul {
-  list-style: none;
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Container for the quiz */
+#containerstart {
+  background-color: rgb(255 255 255 / 62%);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 7.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+}
+
+/* List of answers */
+ul#answers-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#answers-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #e9e9e9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul#answers-list li:hover {
+  background-color: #d0d0d0;
+}
+
+/* Results page */
+#endingpag .container {
+  padding: 20px;
+  text-align: center;
+}
+
+#endingpag .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Hide quiz sections initially */
+#quiz,
+#endingpag,
+#guid {
+  display: none;
+}
+
+#guid {
+  background-color: rgb(255 255 255 / 62%);
+  border-radius: 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 7.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+}
+#guid h3 {
+  text-transform: capitalize;
+  font-family: fangsong;
+  font-size: 30px;
+  color: #bc6c25;
+}
+#guid ul {
+  list-style: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-size: 17px;
+  font-weight: bold;
+  color: #99582a;
+}
+.button button {
+  background-color: #bc6c25;
+}
+#quiz {
+  width: 450px;
+  height: 550px;
+  background: wheat;
+  border-radius: 21px;
 }
