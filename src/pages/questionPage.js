@@ -30,17 +30,18 @@ export const initQuestionPage = () => {
     answersListElement.appendChild(answerElement);
   }
 
-  document
-    .getElementById(NEXT_QUESTION_BUTTON_ID)
-    .addEventListener('click', nextQuestion);
+  // document
+  //   .getElementById(NEXT_QUESTION_BUTTON_ID)
+  //   .addEventListener('click', nextQuestion);
 };
 
 
 export const nextQuestion = () => {
-  quizData.currentQuestionIndex += 1;
-
+  // quizData.currentQuestionIndex +=1;
+  quizData.currentQuestionIndex +=1;
   if (quizData.currentQuestionIndex < quizData.questions.length) {
     initQuestionPage();
+
   } else {
     showQuizResults();
   }

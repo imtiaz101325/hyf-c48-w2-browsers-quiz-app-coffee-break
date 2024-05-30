@@ -23,16 +23,7 @@ export const quizData = {
       },
       correct: 'b',
       selected: null,
-      links: [
-        {
-          text: 'Wikipedia',
-          href: 'https://en.wikipedia.org/wiki/Coffee_bean',
-        },
-        {
-          text: 'National Coffee Association',
-          href: 'https://www.ncausa.org/About-Coffee/What-is-Coffee',
-        },
-      ],
+    
     },
     {
       text: 'What is the most popular coffee drink in the United States?',
@@ -44,18 +35,7 @@ export const quizData = {
       },
       correct: 'd',
       selected: null,
-      links: [
-        {
-          text: 'Statista',
-          href: 'https://www.statista.com/statistics/277137/us-most-popular-coffee-preparations/',
-          href:
-            'https://www.statista.com/statistics/277137/us-most-popular-coffee-preparations/',
-        },
-        {
-          text: 'Coffee Affection',
-          href: 'https://coffeeaffection.com/most-popular-coffee-drinks/',
-        },
-      ],
+     
     },
     {
       text: 'Which country is the largest producer of coffee in the world?',
@@ -67,43 +47,8 @@ export const quizData = {
       },
       correct: 'd',
       selected: null,
-      links: [
-        {
-          text: 'World Atlas',
-          href: 'https://www.worldatlas.com/articles/top-coffee-producing-countries.html',
-        },
-        {
-          text: 'Coffee Rank',
-          href: 'https://www.coffeerank.com/coffee-producers/',
-        },
-      ],
-    },
-    {
-      text: 'What is a coffee break?',
-      answers: {
-        a: 'A short rest period during the workday',
-        b: 'A time to brew coffee',
-        c: 'A moment to read about coffee',
-        d: 'A vacation dedicated to coffee tasting',
-      },
-      correct: 'a',
-      selected: null,
-      links: [
-        {
-          text: 'Wikipedia',
-          href: 'https://en.wikipedia.org/wiki/Coffee_break',
-        },
-        {
-          text: 'HRZone',
-          href: 'https://www.hrzone.com/hr-glossary/what-is-a-coffee-break',
-        },
-      ],
-    },
-    
    
-         
-      
-    
+    },
     {
       text: 'What is a coffee break?',
       answers: {
@@ -114,16 +59,19 @@ export const quizData = {
       },
       correct: 'a',
       selected: null,
-      links: [
-        {
-          text: 'Wikipedia',
-          href: 'https://en.wikipedia.org/wiki/Coffee_break',
-        },
-        {
-          text: 'HRZone',
-          href: 'https://www.hrzone.com/hr-glossary/what-is-a-coffee-break',
-        },
-      ],
+     
+    },
+    {
+      text: 'What is a coffee break?',
+      answers: {
+        a: 'A short rest period during the workday',
+        b: 'A time to brew coffee',
+        c: 'A moment to read about coffee',
+        d: 'A vacation dedicated to coffee tasting',
+      },
+      correct: 'a',
+      selected: null,
+     
     },
     {
       text: 'What is a cappuccino?',
@@ -135,16 +83,7 @@ export const quizData = {
       },
       correct: 'b',
       selected: null,
-      links: [
-        {
-          text: 'Coffee Affection',
-          href: 'https://coffeeaffection.com/what-is-a-cappuccino/',
-        },
-        {
-          text: 'National Coffee Association',
-          href: 'https://www.ncausa.org/About-Coffee/What-is-Coffee/Coffee-Roasts-and-Flavors',
-        },
-      ],
+      
     },
     {
       text: 'When is International Coffee Day celebrated?',
@@ -156,16 +95,7 @@ export const quizData = {
       },
       correct: 'b',
       selected: null,
-      links: [
-        {
-          text: 'International Coffee Organization',
-          href: 'https://www.internationalcoffeeday.org/',
-        },
-        {
-          text: 'National Today',
-          href: 'https://nationaltoday.com/international-coffee-day/',
-        },
-      ],
+    
     },
     {
       text: 'Which coffee brewing method involves pouring hot water over ground coffee in a filter?',
@@ -177,19 +107,8 @@ export const quizData = {
       },
       correct: 'c',
       selected: null,
-      links: [
-        {
-          text: 'Perfect Daily Grind',
-          href: 'https://perfectdailygrind.com/2019/09/whats-the-difference-between-pour-over-and-drip-coffee/',
-        },
-        {
-        },
-        {
-          text: 'National Coffee Association',
-          href:
-            'https://www.ncausa.org/About-Coffee/What-is-Coffee/Coffee-Roasts-and-Flavors',
-        },
-      ],
+      
+     
     },
     {
       text: 'When is International Coffee Day celebrated?',
@@ -201,16 +120,7 @@ export const quizData = {
       },
       correct: 'b',
       selected: null,
-      links: [
-        {
-          text: 'International Coffee Organization',
-          href: 'https://www.internationalcoffeeday.org/',
-        },
-        {
-          text: 'National Today',
-          href: 'https://nationaltoday.com/international-coffee-day/',
-        },
-      ],
+     
     },
     {
       text:
@@ -223,17 +133,7 @@ export const quizData = {
       },
       correct: 'c',
       selected: null,
-      links: [
-        {
-          text: 'Perfect Daily Grind',
-          href:
-            'https://perfectdailygrind.com/2019/09/whats-the-difference-between-pour-over-and-drip-coffee/',
-        },
-        {
-          text: 'Blue Bottle Coffee',
-          href: 'https://bluebottlecoffee.com/preparation-guides/pour-over',
-        },
-      ],
+     
     },
   ],
 };

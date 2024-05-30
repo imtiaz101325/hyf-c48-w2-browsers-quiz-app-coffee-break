@@ -26,3 +26,4 @@ export const createQuestionElement = (question, currentScore) => {
 
   return element;
 };
+
