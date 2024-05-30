@@ -99,23 +99,11 @@ export const quizData = {
         },
       ],
     },
-    {
-      text: 'What is a cappuccino?',
-      answers: {
-
-      selected: null,
-      links: [
-        {
-          text: 'World Atlas',
-          href:
-            'https://www.worldatlas.com/articles/top-coffee-producing-countries.html',
-        },
-        {
-          text: 'Coffee Rank',
-          href: 'https://www.coffeerank.com/coffee-producers/',
-        },
-      ],
-    },
+    
+   
+         
+      
+    
     {
       text: 'What is a coffee break?',
       answers: {
