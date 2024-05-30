@@ -6,6 +6,7 @@ import {
   START_QUIZ_BUTTON_ID,
   CONTAINER_START,
   GUID_SECTION,
+ 
 } from '../constants.js';
 import { createWelcomeElement } from '../views/welcomeView.js';
 import { initQuestionPage } from './questionPage.js';
