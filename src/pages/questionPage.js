@@ -60,6 +60,7 @@ const showQuizResults = () => {
   document.getElementById('go-home-button').addEventListener('click', () => {
     userInterface.style.display = 'none';
     mainpage.style.display = 'block';
+    quizData.score = 0;
 
     initWelcomePage();
     quizData.currentQuestionIndex = 0;
