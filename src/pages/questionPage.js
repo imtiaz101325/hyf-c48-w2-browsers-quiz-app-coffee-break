@@ -65,10 +65,14 @@ const showQuizResults = () => {
     quizData.score = 0;
     initQuestionPage();
   });
+  const body=document.querySelector('body')
 
   document.getElementById('go-home-button').addEventListener('click', () => {
+    body.style.background=" url('/coffee.jpg') no-repeat center center fixed "
+    body.style.backgroundSize ='cover'
     userInterface.style.display = 'none';
     mainpage.style.display = 'block';
+
   });
 };
 
