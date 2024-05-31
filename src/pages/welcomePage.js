@@ -6,7 +6,6 @@ import {
   START_QUIZ_BUTTON_ID,
   CONTAINER_START,
   GUID_SECTION,
- 
 } from '../constants.js';
 import { quizData } from '../data.js';
 import { createWelcomeElement } from '../views/welcomeView.js';
@@ -26,7 +25,7 @@ export const initWelcomePage = () => {
 
 const startQuiz = () => {
   quizData.currentQuestionIndex = 0;
-  currentQuestionIndex =quizData.currentQuestionIndex;
+  currentQuestionIndex = quizData.currentQuestionIndex;
   initQuestionPage();
 };
 const guid = document.getElementById(GUID_SECTION);

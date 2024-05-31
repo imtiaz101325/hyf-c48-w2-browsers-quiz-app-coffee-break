@@ -48,8 +48,7 @@ export const quizData = {
         {
           text: 'Statista',
           href: 'https://www.statista.com/statistics/277137/us-most-popular-coffee-preparations/',
-          href:
-            'https://www.statista.com/statistics/277137/us-most-popular-coffee-preparations/',
+          href: 'https://www.statista.com/statistics/277137/us-most-popular-coffee-preparations/',
         },
         {
           text: 'Coffee Affection',
@@ -99,11 +98,7 @@ export const quizData = {
         },
       ],
     },
-    
-   
-         
-      
-    
+
     {
       text: 'What is a coffee break?',
       answers: {
@@ -182,12 +177,10 @@ export const quizData = {
           text: 'Perfect Daily Grind',
           href: 'https://perfectdailygrind.com/2019/09/whats-the-difference-between-pour-over-and-drip-coffee/',
         },
-        {
-        },
+        {},
         {
           text: 'National Coffee Association',
-          href:
-            'https://www.ncausa.org/About-Coffee/What-is-Coffee/Coffee-Roasts-and-Flavors',
+          href: 'https://www.ncausa.org/About-Coffee/What-is-Coffee/Coffee-Roasts-and-Flavors',
         },
       ],
     },
@@ -213,8 +206,7 @@ export const quizData = {
       ],
     },
     {
-      text:
-        'Which coffee brewing method involves pouring hot water over ground coffee in a filter?',
+      text: 'Which coffee brewing method involves pouring hot water over ground coffee in a filter?',
       answers: {
         a: 'French press',
         b: 'Espresso machine',
@@ -226,8 +218,7 @@ export const quizData = {
       links: [
         {
           text: 'Perfect Daily Grind',
-          href:
-            'https://perfectdailygrind.com/2019/09/whats-the-difference-between-pour-over-and-drip-coffee/',
+          href: 'https://perfectdailygrind.com/2019/09/whats-the-difference-between-pour-over-and-drip-coffee/',
         },
         {
           text: 'Blue Bottle Coffee',

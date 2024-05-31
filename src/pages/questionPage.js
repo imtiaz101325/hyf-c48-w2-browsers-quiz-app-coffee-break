@@ -14,13 +14,12 @@ let score = 0;
 
 export const initQuestionPage = () => {
   const userInterface = document.getElementById(QUIZ_AREA);
-  
+
   userInterface.innerHTML = '';
-  
+
   let currentQuestion = quizData.questions[quizData.currentQuestionIndex];
   const questionElement = createQuestionElement(currentQuestion.text);
   userInterface.appendChild(questionElement);
-  
 
   const answersListElement = document.getElementById(ANSWERS_LIST_ID);
 
@@ -37,10 +36,9 @@ export const initQuestionPage = () => {
     .addEventListener('click', nextQuestion);
 };
 
-
 export const nextQuestion = () => {
   quizData.currentQuestionIndex += 1;
-  
+
   if (quizData.currentQuestionIndex < quizData.questions.length) {
     initQuestionPage();
   } else {
@@ -65,7 +63,7 @@ const showQuizResults = () => {
 
     initWelcomePage();
     quizData.currentQuestionIndex = 0;
-    currentQuestion=quizData.questions[quizData.currentQuestionIndex];
+    currentQuestion = quizData.questions[quizData.currentQuestionIndex];
     quizData.score = 0;
   });
 };
