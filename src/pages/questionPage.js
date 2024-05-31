@@ -11,6 +11,12 @@ import { quizData } from '../data.js';
 import { initWelcomePage } from './welcomePage.js';
 
 let score = 0;
+var localStorage = require('localStorage')
+  , myValue = { foo: 'bar', baz: 'quux' }
+  ;
+
+localStorage.setItem('myKey', JSON.stringify(myValue));
+myValue = localStorage.getItem('myKey');
 
 export const initQuestionPage = () => {
   const userInterface = document.getElementById(QUIZ_AREA);
