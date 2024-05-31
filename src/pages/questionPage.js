@@ -37,10 +37,11 @@ export const initQuestionPage = () => {
 };
 
 export const nextQuestion = () => {
-  quizData.currentQuestionIndex += 1;
-
+  // quizData.currentQuestionIndex +=1;
+  quizData.currentQuestionIndex +=1;
   if (quizData.currentQuestionIndex < quizData.questions.length) {
     initQuestionPage();
+
   } else {
     showQuizResults();
   }
@@ -57,14 +58,31 @@ const showQuizResults = () => {
       </div>
     </div>
   `;
+<<<<<<< HEAD
+=======
+
+  document.getElementById('try-again-button').addEventListener('click', () => {
+    quizData.currentQuestionIndex = 0;
+    quizData.score = 0;
+    initQuestionPage();
+  });
+  const body=document.querySelector('body')
+
+>>>>>>> styling
   document.getElementById('go-home-button').addEventListener('click', () => {
+    body.style.background=" url('/coffee.jpg') no-repeat center center fixed "
+    body.style.backgroundSize ='cover'
     userInterface.style.display = 'none';
     mainpage.style.display = 'block';
+<<<<<<< HEAD
     quizData.score = 0;
 
     initWelcomePage();
     quizData.currentQuestionIndex = 0;
     currentQuestion = quizData.questions[quizData.currentQuestionIndex];
     quizData.score = 0;
+=======
+
+>>>>>>> styling
   });
 };
