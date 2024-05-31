@@ -20,8 +20,9 @@ export const handleAnswerClick = (selectedKey) => {
   // });
 
   if (selectedKey === correctAnswer) {
+   
     quizData.score += 1;
- 
+    
   }
 
   nextQuestion()

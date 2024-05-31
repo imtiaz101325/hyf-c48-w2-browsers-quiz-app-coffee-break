@@ -30,9 +30,9 @@ export const initQuestionPage = () => {
     answersListElement.appendChild(answerElement);
   }
 
-  // document
-  //   .getElementById(NEXT_QUESTION_BUTTON_ID)
-  //   .addEventListener('click', nextQuestion);
+  document
+    .getElementById(NEXT_QUESTION_BUTTON_ID)
+    .addEventListener('click', nextQuestion);
 };
 
 
