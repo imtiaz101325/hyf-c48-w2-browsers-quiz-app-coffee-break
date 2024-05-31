@@ -1,6 +1,6 @@
 import { quizData } from '../data.js';
 import { nextQuestion } from '../pages/questionPage.js';
-import {  POPUP_ID } from '../constants.js';
+import { POPUP_ID } from '../constants.js';
 export const createAnswerElement = (key, answerText) => {
   const element = document.createElement('li');
   element.innerHTML = `${key}: ${answerText}`;
@@ -13,10 +13,10 @@ export const handleAnswerClick = (selectedKey) => {
 
   if (selectedKey === correctAnswer) {
     quizData.score += 1;
-    const popup=document.getElementById(POPUP_ID);
-    popup.style.display='block';
+    const popup = document.getElementById(POPUP_ID);
+    popup.style.display = 'block';
     setTimeout(() => {
-      popup.style.display='none';
+      popup.style.display = 'none';
     }, 1000);
 
     console.log('Correct!');
