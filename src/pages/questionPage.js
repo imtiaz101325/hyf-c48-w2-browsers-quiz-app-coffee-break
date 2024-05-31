@@ -54,12 +54,11 @@ const showQuizResults = () => {
       <h1>thank you for playing</h1>
       <h4>Your score: ${quizData.score} out of ${quizData.questions.length}</h4>
       <div class="buttons">
-        <button id="go-home-button">Go to Home</button>
+        <button id="try-again-button">TRY AGAIN</button>
+        <button id="go-home-button">GO TO HOME</button>
       </div>
     </div>
   `;
-<<<<<<< HEAD
-=======
 
   document.getElementById('try-again-button').addEventListener('click', () => {
     quizData.currentQuestionIndex = 0;
@@ -68,21 +67,18 @@ const showQuizResults = () => {
   });
   const body=document.querySelector('body')
 
->>>>>>> styling
+
   document.getElementById('go-home-button').addEventListener('click', () => {
     body.style.background=" url('/coffee.jpg') no-repeat center center fixed "
     body.style.backgroundSize ='cover'
     userInterface.style.display = 'none';
     mainpage.style.display = 'block';
-<<<<<<< HEAD
+
     quizData.score = 0;
 
     initWelcomePage();
     quizData.currentQuestionIndex = 0;
     currentQuestion = quizData.questions[quizData.currentQuestionIndex];
     quizData.score = 0;
-=======
-
->>>>>>> styling
   });
 };

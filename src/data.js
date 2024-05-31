@@ -35,21 +35,7 @@ export const quizData = {
       },
       correct: 'd',
       selected: null,
-<<<<<<< HEAD
-      links: [
-        {
-          text: 'Statista',
-          href: 'https://www.statista.com/statistics/277137/us-most-popular-coffee-preparations/',
-          href: 'https://www.statista.com/statistics/277137/us-most-popular-coffee-preparations/',
-        },
-        {
-          text: 'Coffee Affection',
-          href: 'https://coffeeaffection.com/most-popular-coffee-drinks/',
-        },
-      ],
-=======
      
->>>>>>> styling
     },
     {
       text: 'Which country is the largest producer of coffee in the world?',
@@ -61,44 +47,8 @@ export const quizData = {
       },
       correct: 'd',
       selected: null,
-<<<<<<< HEAD
-      links: [
-        {
-          text: 'World Atlas',
-          href: 'https://www.worldatlas.com/articles/top-coffee-producing-countries.html',
-        },
-        {
-          text: 'Coffee Rank',
-          href: 'https://www.coffeerank.com/coffee-producers/',
-        },
-      ],
-    },
-    {
-      text: 'What is a coffee break?',
-      answers: {
-        a: 'A short rest period during the workday',
-        b: 'A time to brew coffee',
-        c: 'A moment to read about coffee',
-        d: 'A vacation dedicated to coffee tasting',
-      },
-      correct: 'a',
-      selected: null,
-      links: [
-        {
-          text: 'Wikipedia',
-          href: 'https://en.wikipedia.org/wiki/Coffee_break',
-        },
-        {
-          text: 'HRZone',
-          href: 'https://www.hrzone.com/hr-glossary/what-is-a-coffee-break',
-        },
-      ],
-    },
-
-=======
    
     },
->>>>>>> styling
     {
       text: 'What is a coffee break?',
       answers: {
@@ -157,22 +107,8 @@ export const quizData = {
       },
       correct: 'c',
       selected: null,
-<<<<<<< HEAD
-      links: [
-        {
-          text: 'Perfect Daily Grind',
-          href: 'https://perfectdailygrind.com/2019/09/whats-the-difference-between-pour-over-and-drip-coffee/',
-        },
-        {},
-        {
-          text: 'National Coffee Association',
-          href: 'https://www.ncausa.org/About-Coffee/What-is-Coffee/Coffee-Roasts-and-Flavors',
-        },
-      ],
-=======
       
      
->>>>>>> styling
     },
     {
       text: 'When is International Coffee Day celebrated?',
@@ -187,7 +123,8 @@ export const quizData = {
      
     },
     {
-      text: 'Which coffee brewing method involves pouring hot water over ground coffee in a filter?',
+      text:
+        'Which coffee brewing method involves pouring hot water over ground coffee in a filter?',
       answers: {
         a: 'French press',
         b: 'Espresso machine',
@@ -196,20 +133,7 @@ export const quizData = {
       },
       correct: 'c',
       selected: null,
-<<<<<<< HEAD
-      links: [
-        {
-          text: 'Perfect Daily Grind',
-          href: 'https://perfectdailygrind.com/2019/09/whats-the-difference-between-pour-over-and-drip-coffee/',
-        },
-        {
-          text: 'Blue Bottle Coffee',
-          href: 'https://bluebottlecoffee.com/preparation-guides/pour-over',
-        },
-      ],
-=======
      
->>>>>>> styling
     },
   ],
 };

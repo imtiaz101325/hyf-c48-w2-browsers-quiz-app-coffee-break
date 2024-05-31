@@ -25,7 +25,7 @@ export const initWelcomePage = () => {
 
 const startQuiz = () => {
   quizData.currentQuestionIndex = 0;
-  currentQuestionIndex = quizData.currentQuestionIndex;
+
   initQuestionPage();
 };
 const guid = document.getElementById(GUID_SECTION);
