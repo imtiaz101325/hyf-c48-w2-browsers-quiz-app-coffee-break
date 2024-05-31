@@ -8,6 +8,7 @@ import {
 import { createQuestionElement } from '../views/questionView.js';
 import { createAnswerElement, handleAnswerClick } from '../views/answerView.js';
 import { quizData } from '../data.js';
+import { initWelcomePage } from './welcomePage.js';
 
 let score = 0;
 
@@ -16,7 +17,7 @@ export const initQuestionPage = () => {
 
   userInterface.innerHTML = '';
 
-  const currentQuestion = quizData.questions[quizData.currentQuestionIndex];
+  let currentQuestion = quizData.questions[quizData.currentQuestionIndex];
   const questionElement = createQuestionElement(currentQuestion.text);
   userInterface.appendChild(questionElement);
 
@@ -35,7 +36,6 @@ export const initQuestionPage = () => {
     .addEventListener('click', nextQuestion);
 };
 
-
 export const nextQuestion = () => {
   quizData.currentQuestionIndex += 1;
 
@@ -50,28 +50,21 @@ const showQuizResults = () => {
   const userInterface = document.getElementById(QUIZ_AREA);
   userInterface.innerHTML = `
     <div class="container">
-      <h1>Quiz Results</h1>
+      <h1>thank you for playing</h1>
       <h4>Your score: ${quizData.score} out of ${quizData.questions.length}</h4>
       <div class="buttons">
-        <button id="try-again-button">Try Again</button>
         <button id="go-home-button">Go to Home</button>
       </div>
     </div>
   `;
-
-  document.getElementById('try-again-button').addEventListener('click', () => {
-    quizData.currentQuestionIndex = 0;
-    quizData.score = 0;
-    initQuestionPage();
-  });
-
   document.getElementById('go-home-button').addEventListener('click', () => {
     userInterface.style.display = 'none';
     mainpage.style.display = 'block';
+    quizData.score = 0;
+
+    initWelcomePage();
+    quizData.currentQuestionIndex = 0;
+    currentQuestion = quizData.questions[quizData.currentQuestionIndex];
+    quizData.score = 0;
   });
 };
-
-document
-  .getElementById('start-quiz-button')
-  .addEventListener('click', initQuestionPage);
-document.getElementById('start').addEventListener('click', initQuestionPage);
