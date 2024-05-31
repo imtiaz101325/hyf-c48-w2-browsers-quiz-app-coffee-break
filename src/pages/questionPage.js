@@ -14,10 +14,8 @@ let score = 0;
 
 export const initQuestionPage = () => {
   const userInterface = document.getElementById(QUIZ_AREA);
-
   userInterface.innerHTML = '';
-
-  let currentQuestion = quizData.questions[quizData.currentQuestionIndex];
+  const currentQuestion = quizData.questions[quizData.currentQuestionIndex];
   const questionElement = createQuestionElement(currentQuestion.text);
   userInterface.appendChild(questionElement);
 

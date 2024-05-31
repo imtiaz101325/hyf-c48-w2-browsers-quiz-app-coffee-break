@@ -122,3 +122,22 @@ ul#answers-list li:hover {
   background: wheat;
   border-radius: 21px;
 }
+/* added popup please make it fancy */
+#popup {
+  display: none; /* Initially hidden */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+#popup-content {
+  background-color: green;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
