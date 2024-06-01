@@ -25,9 +25,7 @@ export const initQuestionPage = () => {
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
     const answerElement = createAnswerElement(key, answerText);
-    answerElement.addEventListener('click', () =>
-      handleAnswerClick(key, currentQuestion.correct)
-    );
+  
     answersListElement.appendChild(answerElement);
   }
 
@@ -37,10 +35,11 @@ export const initQuestionPage = () => {
 };
 
 export const nextQuestion = () => {
-  quizData.currentQuestionIndex += 1;
-
+  
+  quizData.currentQuestionIndex +=1;
   if (quizData.currentQuestionIndex < quizData.questions.length) {
     initQuestionPage();
+
   } else {
     showQuizResults();
   }
@@ -53,13 +52,26 @@ const showQuizResults = () => {
       <h1>thank you for playing</h1>
       <h4>Your score: ${quizData.score} out of ${quizData.questions.length}</h4>
       <div class="buttons">
-        <button id="go-home-button">Go to Home</button>
+        <button id="try-again-button">TRY AGAIN</button>
+        <button id="go-home-button">GO TO HOME</button>
       </div>
     </div>
   `;
+
+  document.getElementById('try-again-button').addEventListener('click', () => {
+    quizData.currentQuestionIndex = 0;
+    quizData.score = 0;
+    initQuestionPage();
+  });
+  const body=document.querySelector('body')
+
+
   document.getElementById('go-home-button').addEventListener('click', () => {
+    body.style.background=" url('/coffee.jpg') no-repeat center center fixed "
+    body.style.backgroundSize ='cover'
     userInterface.style.display = 'none';
     mainpage.style.display = 'block';
+
     quizData.score = 0;
 
     initWelcomePage();
