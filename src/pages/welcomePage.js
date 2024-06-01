@@ -12,12 +12,6 @@ import { createWelcomeElement } from '../views/welcomeView.js';
 import { initQuestionPage } from './questionPage.js';
 
 export const initWelcomePage = () => {
-  // const userInterface = document.getElementById(USER_INTERFACE_ID);
-  // userInterface.innerHTML = '';
-
-  // const welcomeElement = createWelcomeElement();
-  // userInterface.appendChild(welcomeElement);
-
   document
     .getElementById(START_QUIZ_BUTTON_ID)
     .addEventListener('click', startQuiz);
@@ -29,30 +23,29 @@ const startQuiz = () => {
   initQuestionPage();
 };
 const guid = document.getElementById(GUID_SECTION);
-const startcontainer = document.getElementById(CONTAINER_START);
-const exitguid = document.getElementById(EXIT_BUTTON);
-const startqu = document.getElementById(START_BUTTON);
-const quizarea = document.getElementById(QUIZ_AREA);
-const body=document.querySelector('body')
-const startbutton = document.getElementById(START_QUIZ_BUTTON_ID);
+const startContainer = document.getElementById(CONTAINER_START);
+const exitGuide = document.getElementById(EXIT_BUTTON);
+const startQuestions = document.getElementById(START_BUTTON);
+const quizArea = document.getElementById(QUIZ_AREA);
+const body = document.querySelector('body');
+const startButton = document.getElementById(START_QUIZ_BUTTON_ID);
 
-startbutton.addEventListener('click', () => {
+startButton.addEventListener('click', () => {
   guid.style.display = 'block';
-  body.style.background='#260701'
-  startcontainer.style.display = 'none';
+  body.style.background = '#260701';
+  startContainer.style.display = 'none';
   initQuestionPage();
   startQuiz();
 });
-startqu.addEventListener('click', () => {
-  quizarea.style.display = 'block';
+startQuestions.addEventListener('click', () => {
+  quizArea.style.display = 'block';
   guid.style.display = 'none';
   startQuiz();
   initQuestionPage();
 });
-exitguid.addEventListener('click', () => {
-  startcontainer.style.display = 'block';
+exitGuide.addEventListener('click', () => {
+  startContainer.style.display = 'block';
   guid.style.display = 'none';
   initQuestionPage();
   startQuiz();
 });
-

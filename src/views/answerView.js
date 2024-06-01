@@ -28,7 +28,7 @@ export const handleAnswerClick = (selectedKey, selectedElement) => {
   }
 
   // Clear previous selections
-  document.querySelectorAll('.answer-option').forEach(opt => {
+  document.querySelectorAll('.answer-option').forEach((opt) => {
     opt.classList.remove('selected', 'incorrect-answer');
     opt.style.background = '';
     opt.style.color = '';
