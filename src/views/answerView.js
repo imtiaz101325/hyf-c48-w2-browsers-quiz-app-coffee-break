@@ -1,9 +1,8 @@
 import { quizData } from '../data.js';
 import { nextQuestion } from '../pages/questionPage.js';
-import { ANSWERS_LIST_ID } from '../constants.js';
-import { QUIZ_AREA } from '../constants.js';
+import { ANSWERS_LIST_ID, QUIZ_AREA } from '../constants.js';
 
-let answerSelected = false; // Flag to prevent multiple selections
+let answerSelected = false;
 
 export const createAnswerElement = (key, answerText) => {
   const element = document.createElement('li');
@@ -15,16 +14,22 @@ export const createAnswerElement = (key, answerText) => {
 };
 
 export const handleAnswerClick = (selectedKey, selectedElement) => {
-  if (answerSelected) return; // Exit if an answer has already been selected
+  if (answerSelected) return;
 
-  answerSelected = true; // Set the flag to true on the first selection
+  answerSelected = true;
 
   const currentQuestion = quizData.questions[quizData.currentQuestionIndex];
   const correctAnswer = currentQuestion.correct;
 
+  // Disable the Next Question button
+  const nextButton = document.getElementById('next-question-button');
+  if (nextButton) {
+    nextButton.disabled = true;
+  }
+
   // Clear previous selections
   document.querySelectorAll('.answer-option').forEach(opt => {
-    opt.classList.remove('selected');
+    opt.classList.remove('selected', 'incorrect-answer');
     opt.style.background = '';
     opt.style.color = '';
   });
@@ -41,7 +46,10 @@ export const handleAnswerClick = (selectedKey, selectedElement) => {
 
   selectedElement.classList.add('selected');
   setTimeout(() => {
-    answerSelected = false; // Reset the flag for the next question
+    answerSelected = false;
+    if (nextButton) {
+      nextButton.disabled = false; // Re-enable the Next Question button
+    }
     nextQuestion();
   }, 2000);
 };
