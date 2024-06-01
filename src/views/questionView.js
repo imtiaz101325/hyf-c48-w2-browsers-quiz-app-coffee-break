@@ -19,7 +19,7 @@ export const createQuestionElement = (question, currentScore) => {
     </ul>
 
     <button id="${NEXT_QUESTION_BUTTON_ID}">
-      Next question
+      Skip question
     </button>
     <h3>Score:${quizData.score} / ${quizData.questions.length
     }</h3>
