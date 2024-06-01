@@ -25,7 +25,7 @@ export const initQuestionPage = () => {
 
   for (const [key, answerText] of Object.entries(currentQuestion.answers)) {
     const answerElement = createAnswerElement(key, answerText);
-  
+
     answersListElement.appendChild(answerElement);
   }
 
@@ -35,7 +35,7 @@ export const initQuestionPage = () => {
 };
 
 export const nextQuestion = () => {
-  
+
   quizData.currentQuestionIndex +=1;
   if (quizData.currentQuestionIndex < quizData.questions.length) {
     initQuestionPage();
@@ -67,7 +67,7 @@ const showQuizResults = () => {
 
 
   document.getElementById('go-home-button').addEventListener('click', () => {
-    body.style.background=" url('/coffee.jpg') no-repeat center center fixed "
+    body.style.background=" url('/public/coffee.jpg') no-repeat center center fixed "
     body.style.backgroundSize ='cover'
     userInterface.style.display = 'none';
     mainpage.style.display = 'block';

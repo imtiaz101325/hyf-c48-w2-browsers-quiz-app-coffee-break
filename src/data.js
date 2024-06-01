@@ -23,7 +23,7 @@ export const quizData = {
       },
       correct: 'b',
       selected: null,
-    
+
     },
     {
       text: 'What is the most popular coffee drink in the United States?',
@@ -35,7 +35,7 @@ export const quizData = {
       },
       correct: 'd',
       selected: null,
-     
+
     },
     {
       text: 'Which country is the largest producer of coffee in the world?',
@@ -47,7 +47,7 @@ export const quizData = {
       },
       correct: 'd',
       selected: null,
-   
+
     },
     {
       text: 'What is a coffee break?',
@@ -59,19 +59,18 @@ export const quizData = {
       },
       correct: 'a',
       selected: null,
-     
+
     },
     {
-      text: 'What is a coffee break?',
+      text: 'What is a siesta?',
       answers: {
-        a: 'A short rest period during the workday',
-        b: 'A time to brew coffee',
-        c: 'A moment to read about coffee',
-        d: 'A vacation dedicated to coffee tasting',
+        a: 'A quick snack during the afternoon',
+        b: 'A short walk after lunch',
+        c: 'An afternoon rest or nap, especially in hot countries',
+        d: 'A traditional dance from Spain',
       },
-      correct: 'a',
+      correct: 'c',
       selected: null,
-     
     },
     {
       text: 'What is a cappuccino?',
@@ -83,7 +82,7 @@ export const quizData = {
       },
       correct: 'b',
       selected: null,
-      
+
     },
     {
       text: 'When is International Coffee Day celebrated?',
@@ -95,7 +94,7 @@ export const quizData = {
       },
       correct: 'b',
       selected: null,
-    
+
     },
     {
       text: 'Which coffee brewing method involves pouring hot water over ground coffee in a filter?',
@@ -107,33 +106,30 @@ export const quizData = {
       },
       correct: 'c',
       selected: null,
-      
-     
+
+
     },
     {
-      text: 'When is International Coffee Day celebrated?',
+      text: 'What is brainstorming?',
       answers: {
-        a: 'September 29',
-        b: 'October 1',
-        c: 'August 15',
-        d: 'December 5',
+        a: 'A weather phenomenon involving heavy rain and lightning',
+        b: 'A process of generating creative ideas and solutions',
+        c: 'A type of mental exercise for memory improvement',
+        d: 'A technique for stress relief through meditation',
       },
       correct: 'b',
       selected: null,
-     
     },
     {
-      text:
-        'Which coffee brewing method involves pouring hot water over ground coffee in a filter?',
+      text: 'What is remote work?',
       answers: {
-        a: 'French press',
-        b: 'Espresso machine',
-        c: 'Pour-over',
-        d: 'AeroPress',
+        a: 'Working from a location other than the main office',
+        b: 'Working only during the weekends',
+        c: 'A job that requires extensive travel',
+        d: 'A position that involves managing other workers',
       },
-      correct: 'c',
+      correct: 'a',
       selected: null,
-     
     },
   ],
 };
