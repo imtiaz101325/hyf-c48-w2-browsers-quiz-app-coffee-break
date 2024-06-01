@@ -1,3 +1,4 @@
+
 import { quizData } from '../data.js';
 import { nextQuestion } from '../pages/questionPage.js';
 import { ANSWERS_LIST_ID, QUIZ_AREA } from '../constants.js';
@@ -42,6 +43,15 @@ export const handleAnswerClick = (selectedKey, selectedElement) => {
     selectedElement.classList.add('incorrect-answer');
     selectedElement.style.background = '#e63946';
     selectedElement.style.color = 'white';
+
+    setTimeout(() => {
+      document.querySelectorAll('.answer-option').forEach(opt => {
+        if (opt.innerHTML.startsWith(correctAnswer)) {
+          opt.style.background = 'green';
+          opt.style.color = 'white';
+        }
+      });
+    }, 500);
   }
 
   selectedElement.classList.add('selected');
