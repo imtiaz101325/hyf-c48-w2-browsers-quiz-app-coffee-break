@@ -19,7 +19,8 @@ export const initQuestionPage = () => {
   const userInterface = document.getElementById(QUIZ_AREA);
   userInterface.innerHTML = '';
 
-  let currentQuestion = storedQuizData.questions[storedQuizData.currentQuestionIndex];
+  let currentQuestion =
+    storedQuizData.questions[storedQuizData.currentQuestionIndex];
   const questionElement = createQuestionElement(currentQuestion.text);
   userInterface.appendChild(questionElement);
 
@@ -35,7 +36,9 @@ export const initQuestionPage = () => {
     answersListElement.appendChild(answerElement);
   }
 
-  document.getElementById(NEXT_QUESTION_BUTTON_ID).addEventListener('click', nextQuestion);
+  document
+    .getElementById(NEXT_QUESTION_BUTTON_ID)
+    .addEventListener('click', nextQuestion);
 };
 
 export const nextQuestion = () => {
@@ -80,7 +83,6 @@ const showQuizResults = () => {
     const mainPage = document.getElementById(CONTAINER_START);
     mainPage.style.display = 'block';
     initWelcomePage();
-    
   });
 };
 
@@ -89,5 +91,8 @@ function saveProgress() {
   localStorage.setItem('score', JSON.stringify(score));
   // Update quizData in localStorage
   localStorage.setItem('quizData', JSON.stringify(storedQuizData));
-  localStorage.setItem('currentQuestionIndex', JSON.stringify(storedQuizData.currentQuestionIndex));
+  localStorage.setItem(
+    'currentQuestionIndex',
+    JSON.stringify(storedQuizData.currentQuestionIndex)
+  );
 }
