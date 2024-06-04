@@ -206,3 +206,15 @@ ul#answers-list li:hover {
   background-color: red;
   color: white;
 }
+@media (max-width: 600px) {
+  #containerstart {
+    width: 90%;
+  }
+  #guid {
+    width: 90%;
+  }
+  #quiz {
+    width: 90%;
+  }
+  
+}
