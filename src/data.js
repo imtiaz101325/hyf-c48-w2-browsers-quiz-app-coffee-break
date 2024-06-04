@@ -23,7 +23,6 @@ export const quizData = {
       },
       correct: 'b',
       selected: null,
-
     },
     {
       text: 'What is the most popular coffee drink in the United States?',
@@ -35,7 +34,6 @@ export const quizData = {
       },
       correct: 'd',
       selected: null,
-
     },
     {
       text: 'Which country is the largest producer of coffee in the world?',
@@ -47,7 +45,6 @@ export const quizData = {
       },
       correct: 'd',
       selected: null,
-
     },
     {
       text: 'What is a coffee break?',
@@ -59,7 +56,6 @@ export const quizData = {
       },
       correct: 'a',
       selected: null,
-
     },
     {
       text: 'What is a siesta?',
@@ -82,7 +78,6 @@ export const quizData = {
       },
       correct: 'b',
       selected: null,
-
     },
     {
       text: 'When is International Coffee Day celebrated?',
@@ -94,7 +89,6 @@ export const quizData = {
       },
       correct: 'b',
       selected: null,
-
     },
     {
       text: 'Which coffee brewing method involves pouring hot water over ground coffee in a filter?',
@@ -106,8 +100,6 @@ export const quizData = {
       },
       correct: 'c',
       selected: null,
-
-
     },
     {
       text: 'What is brainstorming?',

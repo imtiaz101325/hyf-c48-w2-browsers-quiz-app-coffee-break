@@ -33,12 +33,12 @@ const startcontainer = document.getElementById(CONTAINER_START);
 const exitguid = document.getElementById(EXIT_BUTTON);
 const startqu = document.getElementById(START_BUTTON);
 const quizarea = document.getElementById(QUIZ_AREA);
-const body=document.querySelector('body')
+const body = document.querySelector('body');
 const startbutton = document.getElementById(START_QUIZ_BUTTON_ID);
 
 startbutton.addEventListener('click', () => {
   guid.style.display = 'block';
-  body.style.background='#260701'
+  body.style.background = '#260701';
   startcontainer.style.display = 'none';
   initQuestionPage();
   startQuiz();
@@ -55,4 +55,3 @@ exitguid.addEventListener('click', () => {
   initQuestionPage();
   startQuiz();
 });
-
