@@ -35,11 +35,9 @@ export const initQuestionPage = () => {
 };
 
 export const nextQuestion = () => {
-
-  quizData.currentQuestionIndex +=1;
+  quizData.currentQuestionIndex += 1;
   if (quizData.currentQuestionIndex < quizData.questions.length) {
     initQuestionPage();
-
   } else {
     showQuizResults();
   }
@@ -63,12 +61,12 @@ const showQuizResults = () => {
     quizData.score = 0;
     initQuestionPage();
   });
-  const body=document.querySelector('body')
-
+  const body = document.querySelector('body');
 
   document.getElementById('go-home-button').addEventListener('click', () => {
-    body.style.background=" url('/public/coffee.jpg') no-repeat center center fixed "
-    body.style.backgroundSize ='cover'
+    body.style.background =
+      " url('/public/coffee.jpg') no-repeat center center fixed ";
+    body.style.backgroundSize = 'cover';
     userInterface.style.display = 'none';
     mainpage.style.display = 'block';
 

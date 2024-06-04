@@ -21,8 +21,7 @@ export const createQuestionElement = (question, currentScore) => {
     <button id="${NEXT_QUESTION_BUTTON_ID}">
       Skip question
     </button>
-    <h3>Score:${quizData.score} / ${quizData.questions.length
-    }</h3>
+    <h3>Score:${quizData.score} / ${quizData.questions.length}</h3>
 
     <img src="/public/b74a65ea3a5f0011f86d265c2d3435d8.gif" alt="">
   `;
